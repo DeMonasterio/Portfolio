@@ -1,0 +1,122 @@
+@font-face {
+  font-family: minecrafttitle;
+  src: url(./../../assets/fonts/Upheaval.ttf) format("woff2");
+}
+
+
+.projects__section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4em .5em 2em;
+  gap: .5em;
+  letter-spacing: 2px;
+}
+
+.projects__title {
+  font-family: minecrafttitle;
+  font-size: clamp(1em, 8vw, 6em);
+  color: rgb(53, 248, 111);
+}
+
+.projects__label {
+  background-color: rgb(53, 248, 111);
+  width: 100%;
+  height: 5px;
+}
+
+.projects__para {
+    color: white;
+  padding: .5em;
+  font-size: clamp(1em, 6vw, 2em);
+}
+
+.projects {
+    gap: 2em;
+    padding-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.projects__titles{
+    padding-top: 2em;
+    font-family: minecraftAll;
+    font-size: clamp(.5em, 7vw, 8em);
+    color: rgb(53, 248, 111);
+}
+
+
+.project__section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    gap: 4em;
+}
+
+.slider__order{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .5em;
+}
+
+
+.projects__slider{
+    display: flex;
+    width: 20%;
+    cursor: pointer;
+}
+.projects__slider--right{
+    display: flex;
+    justify-content: end;
+    width: 20%;
+    cursor: pointer;
+}
+
+.image__project {
+    border-radius: 20px;
+    padding: 0 .6em;
+    height: 100%;
+}
+
+.project__arrow--left{
+    background-color: rgb(255, 255, 255);
+    width: 6px;
+    height: 50px;
+}
+.project__arrow--right{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 6px;
+    height: 50px;
+}
+
+.project__arrow--left:nth-child(1){
+    position: relative;
+    bottom: 15px;
+    left: 32px;
+    transform: rotate(45deg);
+}
+
+.project__arrow--left:nth-child(2){
+    position: relative;
+    top: 17px;
+    left: 27px;
+    transform: rotate(-45deg);
+}
+
+
+
+.project__arrow--right:nth-child(1){
+    position: relative;
+    bottom: 15px;
+    right: 27px;
+    transform: rotate(-45deg);
+}
+.project__arrow--right:nth-child(2){
+    position: relative;
+    top: 17px;
+    right: 32px;
+    transform: rotate(45deg);
+}

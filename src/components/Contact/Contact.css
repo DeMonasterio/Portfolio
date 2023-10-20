@@ -1,0 +1,62 @@
+
+@font-face {
+    font-family: minecrafttitle;
+    src: url(./../../assets/fonts/Upheaval.ttf) format("woff2");
+}
+
+
+.contact__color{
+    
+ background-color: rgb(53, 248, 111);
+}
+
+
+/* .contact__title{
+    font-family: minecrafttitle;
+    color: rgb(255, 255, 255);
+    padding: 2em .5em .5em;
+    font-size: clamp(1em, 8vw, 5em);
+} */
+
+.contact__container{
+    font-family: minecrafttitle;
+    display: flex;
+    padding: 2em 1em;
+}
+
+.contact--list{
+    gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.list--contact{
+    cursor: pointer;
+    list-style: none;
+    font-size: clamp(.5em, 7vw, 2.5em);
+    font-family: minecrafttitle;
+}
+
+
+.list--contact:hover {
+    color: white;
+    transition: .3s;
+}
+
+.images--container{
+    width: 30%;
+    display: flex;
+    gap: 1.5em;
+    align-items: end;
+    flex-direction: column-reverse;
+
+}
+    
+    a{
+        width: 40%;
+    }
+
+.icon{
+    width: 100%;
+}

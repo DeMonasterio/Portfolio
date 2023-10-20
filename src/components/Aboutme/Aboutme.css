@@ -1,0 +1,80 @@
+@font-face {
+  font-family: minecrafttitle;
+  src: url(./../../assets/fonts/Upheaval.ttf) format("woff2");
+}
+
+.aboutme__color {
+  padding: 5em 0 2em;
+  color: rgb(53, 248, 111);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding: 3em 4em; */
+  /* gap: 3em; */
+}
+
+.aboutme__title {
+  font-family: minecrafttitle;
+  font-size: clamp(1em, 8vw, 6em);
+  letter-spacing: 4px;
+}
+
+.aboutme__label {
+  height: 5px;
+  width: 45%;
+  background-color: rgb(53, 248, 111);
+}
+
+.aboutme__section {
+  display: flex;
+  /* background-color: rgb(29, 100, 15); */
+  flex-direction: column;
+  padding: 0 1em;
+  gap: .5em;
+}
+
+.aboutme__image {
+  padding: .5em 0;
+  gap: 3px;
+  display: flex;
+  /* background-color: royalblue; */
+  /* display: flex; */
+  height: fit-content;
+  /* display: none; */
+  /* justify-content: center; */
+}
+
+.aboutme__image--me {
+  width: 40%;
+  border: 3px solid lightgreen;
+  border-radius: 35px;
+  background-image: url(../../assets/abtmeimg/junglebg.webp);
+  background-position: 55%;
+  background-size: cover;
+}
+
+.aboutme__para {
+  color: white;
+  /* background-color: rebeccapurple; */
+  font-size: clamp(1em, 5vw, 2em);
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1440px) {
+
+}
+
+@media (min-width: 1840px) {
+  
+}

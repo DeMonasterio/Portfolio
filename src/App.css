@@ -1,0 +1,315 @@
+@font-face {
+  font-family: minecraftAll;
+  src: url(./assets/fonts/MinecraftRegular-Bmg3.otf) format("opentype");
+}
+
+* {
+  font-family: minecraftAll;
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */
+}
+
+.nebula{
+  /* background-image: url("./assets/background/minetotalblackbg.png"); */
+  /* background-color: rgba(255, 0, 0, 0.767); */
+  
+  display: flex;
+  flex-direction: column-reverse;
+
+  overflow: hidden;
+  position: relative;
+  z-index: 60;
+}
+
+
+.beacon-container{
+  background-image: url("./assets/background/greenbg.png");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  z-index: 50;
+}
+
+
+.icons-container{
+  display: flex;
+  display: none;
+  /* width: min-content; */
+  /* flex-direction: column; */
+  /* background-color: rebeccapurple; */
+  /* flex-direction: row; */
+  /* height: 50px; */
+  padding: 45px 144px;
+  /* padding:10px; */
+  gap: 1em;
+}
+
+.icons{
+  width: 3%;
+  /* width: 45px; */
+}
+
+.icons-img{
+  width: 100%;
+}
+
+
+
+.beacon-cube {
+  /* Acá se apaga */
+  /* display: none; */
+
+  position: absolute;
+  z-index: 10;
+  margin-left: 50%;
+
+  transform-style: preserve-3d;
+  
+  width: 10px;
+  height: 100%;
+  animation: rotateCube 5s linear infinite;
+}
+
+
+.beacon-cube--block {
+  /* Acá se apaga */
+  /* display: none; */
+
+  position: absolute;
+  z-index: 20;
+
+  margin-left: 50%;
+
+  transform-style: preserve-3d;
+  
+  width: 15px;
+  height: 15px;
+
+
+  animation: rotateCube 5s linear infinite;
+}
+
+
+.orden{
+  position: relative;
+  z-index: 40;
+}
+
+.beacon-face{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+
+.beacon-face--block{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+
+.beacon-front{
+  transform: rotateY(0deg) translateZ(2px);
+}
+.beacon-back{
+  transform: rotateY(180deg) translateZ(2px);
+}
+.beacon-left{
+  transform: rotateY(-90deg) translateZ(2px);
+}
+.beacon-right{
+  transform: rotateY(90deg) translateZ(2px);
+}
+
+.beacon-front--block{
+  transform: rotateY(0deg) translateZ(7.5px);
+}
+.beacon-back--block{
+  transform: rotateY(180deg) translateZ(7.5px);
+}
+.beacon-left--block{
+  transform: rotateY(-90deg) translateZ(7.5px);
+}
+.beacon-right--block{
+  transform: rotateY(90deg) translateZ(7.5px);
+}
+
+.beacon-face img{
+  width: 10px;
+  height: 100%;
+}
+
+.beacon-face--block img{
+  width: 15px;
+  height: 15px;
+}
+
+@keyframes rotateCube {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+.icons-container{
+  display: flex;
+}
+}
+
+@media (min-width: 1440px) {
+}
+
+@media (min-width: 1840px) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.martina{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  width: 100%;
+  height: 1000px;
+  filter: blur(50px);
+}
+.martina-rosa--right{
+  transform-style: preserve-3d;
+  position: relative;
+  background-color: rgb(248, 122, 195);
+  width: 200%;
+  height: 500%;
+  transform: rotate(15deg) translateX(0%) ;
+  animation: rotateCube-martina-otro 5s linear infinite;
+}
+@keyframes rotateCube-martina-otro {
+  0% {
+    /* transform: rotate(0deg); */
+  }
+  50% {
+    transform: rotateX(360deg) translateX(-50%);
+    background-color: white;
+  }
+  75%{
+    transform: rotate(15deg) translateX(100%);
+    background-color:white;
+  }
+  100%{
+    transform: rotate(15deg) translateX(0%);
+    background-color: rgb(248, 122, 195);
+  }
+}
+.martina-rosa--left{
+  transform-style: preserve-3d;
+  position: relative;
+  background-color: rgb(248, 122, 195);
+  width: 200%;
+  height: 500%;
+  transform: rotate(-15deg);
+  animation: rotateCube-martina 5s linear infinite;
+
+}
+@keyframes rotateCube-martina {
+  0% {
+  }
+  50% {
+    transform: rotateX(360deg) translateX(50%);
+    background-color: white;
+  }
+  75%{
+    transform: rotate(-15deg) translateX(-100%);
+    background-color:white;
+  }
+  100%{
+    transform: rotate(-15deg) translateX(0%);
+    background-color: rgb(248, 122, 195);
+  }
+}

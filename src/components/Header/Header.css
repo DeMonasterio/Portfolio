@@ -1,0 +1,46 @@
+@font-face {
+  font-family: minecrafttitle;
+  src: url(./../../assets/fonts/Upheaval.ttf) format("woff2");
+}
+
+.hero__navbar {
+  display: flex;
+  list-style: none;
+  font-size: 1.3em;
+  padding: 3em 0;
+  color: white;
+  justify-content: space-around;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.cvdownload {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .hero__navbar{
+    gap: 1em;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0 3em;
+}
+
+.hero__navbar a{
+    font-family: minecrafttitle;
+  font-size: clamp(1em, 3vw, 2.5em);
+}
+
+.cvdownload {
+  display: inline;
+}
+}
+
+@media (min-width: 1440px) {
+}
+
+@media (min-width: 1840px) {
+}
