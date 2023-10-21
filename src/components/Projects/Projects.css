@@ -3,13 +3,12 @@
   src: url(./../../assets/fonts/Upheaval.ttf) format("woff2");
 }
 
-
 .projects__section {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 4em 3vw 2em;
-  gap: .5em;
+  gap: 0.5em;
   letter-spacing: 2px;
 }
 
@@ -26,97 +25,196 @@
 }
 
 .projects__para {
-    color: white;
+  color: white;
   padding: 0 1em;
   font-size: clamp(1em, 5vw, 1.5em);
 }
 
-.projects {
-    gap: 2em;
-    padding-bottom: 5em;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.projects--container {
+  display: flex;
+  max-width: 100%;
+  flex-direction: row;
+  padding: 4em 0;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
 }
 
-.projects__titles{
-    padding-top: 2em;
-    font-family: minecraftAll;
-    font-size: clamp(1.5em, 5vw, 3.5em);
-    color: rgb(53, 248, 111);
+.project--slider {
+  min-width: 10%;
+  max-width: 45%;
+  padding: 0 0.5em;
 }
 
-
-.project__section{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 700px;
-    gap: 4em;
+.container--project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
 }
 
-.slider__order{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 .5em;
+.project-caption {
+  display: flex;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+  place-content: center;
+  z-index: 20;
 }
 
+.project-caption h3 {
+  color: white;
+  font-weight: 500;
+}
 
-.projects__slider{
-    display: flex;
-    width: 20%;
+.hermano {
+  z-index: 10;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects--images {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.container--project:hover  .seemorebtn {
+  transition: 0.6s;
+  display: flex;
+  animation: forwards getUp 1s;
+}
+
+/* ~~~~~~~~ */
+.seemorebtn {
+  display: hidden;
+  z-index: 20;
+  position: relative;
+  place-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn--sm {
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 2em;
+  border: none;
+}
+
+.btn--sm:hover {
+  transition: 0.6s;
+  color: white;
+}
+
+.arrow {
     cursor: pointer;
+  width: 100%;
 }
-.projects__slider--right{
+.arrow--left {
+  align-self: flex-start;
+  transform: rotate(-135deg);
+}
+.arrow--right {
+  align-self: flex-end;
+  transform: rotate(45deg);
+}
+
+.arrow--left:hover{
+    animation: rotateLeft 1s forwards;
+}
+.arrow--right:hover{
+    animation: rotateRight 1s forwards;
+}
+
+
+
+
+
+
+@media (min-width: 700px) {
+    .arrow {
+        cursor: pointer;
+      width: 70%;
+    }
+
+.btn--sm{
+    font-size: 2.5em;
+}
+    
+.seemorebtn {
+      padding: 1em;
+  }
+    
+.container--project:hover  .seemorebtn {
+    transition: 0.6s;
     display: flex;
-    justify-content: end;
-    width: 20%;
-    cursor: pointer;
-}
+    animation: forwards getUpPC 1s;
+  }
 
-.image__project {
-    border-radius: 20px;
-    padding: 0 .6em;
-    height: 100%;
-}
 
-.project__arrow--left{
-    background-color: rgb(255, 255, 255);
-    width: 6px;
-    height: 50px;
-}
-.project__arrow--right{
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    width: 6px;
-    height: 50px;
-}
-
-.project__arrow--left:nth-child(1){
-    position: relative;
-    bottom: 15px;
-    left: 32px;
-    transform: rotate(45deg);
-}
-
-.project__arrow--left:nth-child(2){
-    position: relative;
-    top: 17px;
-    left: 27px;
-    transform: rotate(-45deg);
 }
 
 
 
-.project__arrow--right:nth-child(1){
-    position: relative;
-    bottom: 15px;
-    right: 27px;
-    transform: rotate(-45deg);
+
+
+
+
+
+
+
+@keyframes getUp {
+    0% {
+        background-color: rgb(0, 0, 0);
+    }
+    10%{
+        background-color: rgba(53, 248, 112, 0);    
+    }
+    70%{
+        background-color: rgba(53, 248, 112, 0.76);    
+    }
+    100%{
+        background-color: rgb(53, 248, 111);
+        transform: translateY(-40px);
+    }
 }
-.project__arrow--right:nth-child(2){
-    position: relative;
-    top: 17px;
-    right: 32px;
-    transform: rotate(45deg);
+
+@keyframes getUpPC {
+    0% {
+        background-color: rgb(0, 0, 0);
+    }
+    10%{
+        background-color: rgba(53, 248, 112, 0);    
+    }
+    70%{
+        background-color: rgba(53, 248, 112, 0.76);    
+    }
+    100%{
+        background-color: rgb(53, 248, 111);
+        transform: translateY(-85px); 
+    }
+}
+
+
+@keyframes rotateLeft {
+    0%{
+        transform: rotate(225deg);
+    }
+    100%{
+        transform: rotate(-135deg);
+    }
+}
+
+@keyframes rotateRight {
+    0%{
+        transform: rotate(35deg);
+    }
+    100%{
+        transform: rotate(405deg);
+    }
 }

@@ -17,13 +17,13 @@ function Contact() {
                             <li className="list--contact">   Descargar CV</li>
                         </ul>
                         <div className="images--container">
-                <a href="">
+                <a className="anchorcontact" href="">
                     <img className="icon" src={mailIcon} alt="" />
                 </a>
-                <a href="">
+                <a  className="anchorcontact"  href="">
                     <img className="icon" src={githubIcon} alt="" />
                 </a>
-                <a href="">
+                <a className="anchorcontact"  href="">
                     <img className="icon" src={linkedinIcon} alt="" />
                 </a>
                         </div>

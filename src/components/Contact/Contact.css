@@ -53,7 +53,7 @@
 
 }
     
-    a{
+    .anchorcontact{
         width: 40%;
     }
 
@@ -85,7 +85,7 @@
        justify-content: space-around;
        width: 100%;
    }   
-    a{
+    .anchorcontact{
         width: 10%;
     }
 }

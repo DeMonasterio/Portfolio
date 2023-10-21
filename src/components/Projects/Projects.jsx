@@ -1,29 +1,52 @@
-import { lazy, useState } from "react";
+import { useState } from "react";
 import "./Projects.css";
+
+import ecom from "../../assets/projects-images/ecom.png"
+import encrip from "../../assets/projects-images/encrip.png"
+import physics from "../../assets/projects-images/physics.png"
+import arrow from "../../assets/projects-images/Itemarrow.png"
+
+
 function Projects() {
+    // const [projectTitle, setProjectTitle] = useState("Introducción a la física")
+    // const [urlIframe, seturlIframe] = useState("https://demonasterio.github.io/ProyectoUTN/")
+    // const [count, setCount] = useState(0)
+    // if (urlIframe != "https://demonasterio.github.io/ProyectoUTN/" && count === 0) {
+    //     seturlIframe("https://demonasterio.github.io/ProyectoUTN/")
+    //     setProjectTitle("Introducción  a la física")
+    // } else if (urlIframe === "https://demonasterio.github.io/ProyectoUTN/" && count === 1) {
+    //     seturlIframe("https://demonasterio.github.io/Encriptador/")
+    //     setProjectTitle("Encriptador de texto")
+    // }
+    // const handleSliderLeft = (e) => {
+    //     setCount(count - 1)
+    // }
+    // const handleSliderRight = (e) => {
+    //     setCount(count + 1)
+    // }
 
 
-    const [projectTitle, setProjectTitle] = useState("Introducción a la física")
-    const [urlIframe, seturlIframe] = useState("https://demonasterio.github.io/ProyectoUTN/")
-    const [count, setCount] = useState(0)
+    const [actualImage, setactualImage] = useState(physics)
+    const [actualCaption, setactualCaption] = useState("")
+    const handleLeft = () => {
+        actualImage === physics ? setactualImage(encrip) :
+            actualImage === encrip ? setactualImage(ecom) :
+                actualImage === ecom ? setactualImage(physics) : setactualImage(physics);
 
+        actualImage === physics ? setactualCaption("Encriptador de texto") :
+            actualImage === encrip ? setactualCaption("E-Commerce") :
+                actualImage === ecom ? setactualCaption("Introduccion a la física") : setactualCaption("Error 404")
 
-    if (urlIframe != "https://demonasterio.github.io/ProyectoUTN/" && count === 0) {
-        seturlIframe("https://demonasterio.github.io/ProyectoUTN/")
-        setProjectTitle("Introducción  a la física")
-    } else if (urlIframe === "https://demonasterio.github.io/ProyectoUTN/" && count === 1) {
-        seturlIframe("https://demonasterio.github.io/Encriptador/")
-        setProjectTitle("Encriptador de texto")
     }
+    const handleRight = () => {
+        actualImage === physics ? setactualImage(ecom) :
+            actualImage === ecom ? setactualImage(encrip) :
+                actualImage === encrip ? setactualImage(physics) : setactualImage(physics)
 
-    const handleSliderLeft = (e) => {
-        setCount(count - 1)
+        actualImage === physics ? setactualCaption("E-Commerce") :
+            actualImage === encrip ? setactualCaption("Introduccion a la física") :
+                actualImage === ecom ? setactualCaption("Encriptador de texto") : setactualCaption("Error 404")
     }
-
-    const handleSliderRight = (e) => {
-        setCount(count + 1)
-    }
-
 
     return (
         <>
@@ -43,7 +66,7 @@ function Projects() {
                     <br />
                     <br />
                     Lo que hace que este proyecto sea aún más especial es que
-                    logre mantenerme fiel a mi desafío de no utilizar JavaScript, demostrando que es posible brindar una experiencia interactiva puramente con html y css. 
+                    logre mantenerme fiel a mi desafío de no utilizar JavaScript, demostrando que es posible brindar una experiencia interactiva puramente con html y css.
                     <br />
                     <br />
                     Esta página se convirtió en un espacio pedagógico donde las
@@ -53,25 +76,28 @@ function Projects() {
                 </p>
 
 
-                <div className="projects">
-                    <h2 className="projects__titles" >{projectTitle}</h2>
 
-                    <section className="project__section">
-                        <div className="slider__order">
-                        <div onClick={handleSliderLeft} className="projects__slider">
-                            <span className="project__arrow--left"></span>
-                            <span className="project__arrow--left"></span>
+                <div className="projects--container">
+                    <div className="project--slider" >
+                        <img className="arrow arrow--left" onClick={handleLeft} src={arrow} alt="" />
+                    </div>
+
+                    <div className="container--project">
+                        <div className="project-caption" >
+                            <h3>{actualCaption}</h3>
                         </div>
-                        <div onClick={handleSliderRight} className="projects__slider--right">
-                            <span className="project__arrow--right"></span>
-                            <span className="project__arrow--right"></span>
+                        <div className="hermano">
+                            <img className="projects--images" src={actualImage} alt="" />
                         </div>
-                        </div>
-                        <iframe className="image__project" src={urlIframe} frameborder="0"></iframe>
-                    </section>
+                            <div className="seemorebtn">
+                                <button className="btn--sm">See more</button>
+                            </div>
+                    </div>
+
+                    <div className="project--slider" >
+                        <img className="arrow arrow--right" onClick={handleRight} src={arrow} alt="" />
+                    </div>
                 </div>
-
-
             </div>
         </>
     );
