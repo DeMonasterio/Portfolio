@@ -34,7 +34,7 @@
 .list--contact{
     cursor: pointer;
     list-style: none;
-    font-size: clamp(.5em, 7vw, 2.5em);
+    font-size: clamp(.5em, 7vw, 2em);
     font-family: minecrafttitle;
 }
 
@@ -60,3 +60,58 @@
 .icon{
     width: 100%;
 }
+
+.icon:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+
+
+
+@media (min-width: 480px) {
+   .contact__container{
+       flex-direction: column;
+       gap: 2em;
+   }
+   .contact--list{
+       flex-direction: row;
+       width: 100%;
+       justify-content: space-around;
+       flex-wrap: wrap;
+   }
+   .images--container{
+       flex-direction: row;
+       justify-content: space-around;
+       width: 100%;
+   }   
+    a{
+        width: 10%;
+    }
+}
+
+
+
+
+/* @media (min-width: 900px) {
+   .contact__container{
+       flex-direction: row;
+       padding: 2em;
+   }
+   .contact--list{
+       flex-direction: column;
+       width: 50%;
+   }
+   .list--contact{
+    font-size: clamp(.5em, 7vw, 2.5em);
+    }
+
+   .images--container{
+       flex-direction: column-reverse;
+       width: 50%;
+       gap: 2em;
+   }   
+    a{
+        width: 15%;
+    }
+} */

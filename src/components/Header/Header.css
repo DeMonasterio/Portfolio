@@ -7,7 +7,7 @@
   display: flex;
   list-style: none;
   font-size: 1.3em;
-  padding: 3em 0;
+  padding: 1em 0;
   color: white;
   justify-content: space-around;
 }
@@ -17,16 +17,24 @@ a{
   color: white;
 }
 
+
 .cvdownload {
   display: none;
 }
 
 @media (min-width: 1024px) {
   .hero__navbar{
-    gap: 1em;
+  height: 100%;
   flex-direction: column;
-  align-items: flex-end;
-  padding: 0 3em;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0;
+    
+}
+
+.list--item{
+  padding: 0 2em 0 0;
+  width: max-content;
 }
 
 .hero__navbar a{

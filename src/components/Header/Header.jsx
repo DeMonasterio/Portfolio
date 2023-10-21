@@ -6,10 +6,10 @@ export default function Header(){
     <>
     <nav>
       <ul className='hero__navbar'>
-      <li><a href="">Sobre mí</a></li>
-      <li><a href="">Proyectos</a></li>
-      <li><a href="">Contacto</a></li>
-        <li className='cvdownload' ><a href="">Descargar CV</a></li>
+      <li className='list--item' ><a href="">Sobre mí</a></li>
+      <li className='list--item' ><a href="">Proyectos</a></li>
+      <li className='list--item' ><a href="">Contacto</a></li>
+        <li className='cvdownload list--item' ><a href="">Descargar CV</a></li>
         </ul>
     </nav>
     </>
