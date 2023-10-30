@@ -12,7 +12,7 @@
   justify-content: space-around;
 }
 
-a{
+.anchors{
   text-decoration: none;
   color: white;
 }
@@ -36,6 +36,17 @@ a{
   padding: 0 2em 0 0;
   width: max-content;
 }
+
+.list--item:hover{
+transform: scale(1.1);
+transition: .3s;
+}
+.list--item:hover a{
+  transition: .6s;
+color: rgb(53, 248, 111);
+}
+
+
 
 .hero__navbar a{
     font-family: minecrafttitle;

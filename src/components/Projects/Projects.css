@@ -79,11 +79,12 @@
 }
 
 .projects--images {
+  position: relative;
   width: 100%;
   max-width: 1000px;
 }
 
-.container--project:hover  .seemorebtn {
+.container--project:hover .seemorebtn {
   transition: 0.6s;
   display: flex;
   animation: forwards getUp 1s;
@@ -91,9 +92,9 @@
 
 /* ~~~~~~~~ */
 .seemorebtn {
-  display: hidden;
+  display: none;
   z-index: 20;
-  position: relative;
+  position: absolute;
   place-content: center;
   width: 100%;
   cursor: pointer;
@@ -112,7 +113,7 @@
 }
 
 .arrow {
-    cursor: pointer;
+  cursor: pointer;
   width: 100%;
 }
 .arrow--left {
@@ -120,101 +121,80 @@
   transform: rotate(-135deg);
 }
 .arrow--right {
-  align-self: flex-end;
   transform: rotate(45deg);
 }
 
-.arrow--left:hover{
-    animation: rotateLeft 1s forwards;
+.arrow--left:hover {
+  animation: rotateLeft 1s forwards;
 }
-.arrow--right:hover{
-    animation: rotateRight 1s forwards;
+.arrow--right:hover {
+  animation: rotateRight 1s forwards;
 }
-
-
-
-
-
 
 @media (min-width: 700px) {
-    .arrow {
-        cursor: pointer;
-      width: 70%;
-    }
-
-.btn--sm{
-    font-size: 2.5em;
-}
-    
-.seemorebtn {
-      padding: 1em;
+  .arrow {
+    cursor: pointer;
+    width: 70%;
   }
-    
-.container--project:hover  .seemorebtn {
+
+  .btn--sm {
+    font-size: 2.5em;
+  }
+
+  .seemorebtn {
+    padding: 1em;
+  }
+
+  .hermano:hover .seemorebtn {
     transition: 0.6s;
     display: flex;
     animation: forwards getUpPC 1s;
   }
-
-
 }
 
-
-
-
-
-
-
-
-
-
 @keyframes getUp {
-    0% {
-        background-color: rgb(0, 0, 0);
-    }
-    10%{
-        background-color: rgba(53, 248, 112, 0);    
-    }
-    70%{
-        background-color: rgba(53, 248, 112, 0.76);    
-    }
-    100%{
-        background-color: rgb(53, 248, 111);
-        transform: translateY(-40px);
-    }
+  0% {
+    background-color: rgb(0, 0, 0);
+  }
+  10% {
+    background-color: rgba(53, 248, 112, 0);
+  }
+  70% {
+    background-color: rgba(53, 248, 112, 0.76);
+  }
+  100% {
+    background-color: rgb(53, 248, 111);
+    transform: translateY(-40px);
+  }
 }
 
 @keyframes getUpPC {
-    0% {
-        background-color: rgb(0, 0, 0);
-    }
-    10%{
-        background-color: rgba(53, 248, 112, 0);    
-    }
-    70%{
-        background-color: rgba(53, 248, 112, 0.76);    
-    }
-    100%{
-        background-color: rgb(53, 248, 111);
-        transform: translateY(-85px); 
-    }
+  0% {
+    background-color: rgb(0, 255, 200);
+  }
+  50% {
+    background-color: rgb(0, 255, 200);
+  }
+  100% {
+    background-color: rgb(53, 248, 111);
+    transform: translateY(-85px);
+  }
 }
 
-
 @keyframes rotateLeft {
-    0%{
-        transform: rotate(225deg);
-    }
-    100%{
-        transform: rotate(-135deg);
-    }
+  0% {
+    transform: rotate(225deg);
+  }
+  100% {
+    transform: rotate(-135deg);
+  }
 }
 
 @keyframes rotateRight {
-    0%{
-        transform: rotate(35deg);
-    }
-    100%{
-        transform: rotate(405deg);
-    }
+  0% {
+    transform: rotate(35deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
 }

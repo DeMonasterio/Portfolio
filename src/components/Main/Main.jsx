@@ -5,7 +5,7 @@ import Header from "../Header/Header.jsx"
 function Main() {
   return (
     <>
-    <div className='hero__title'>
+    <div className='hero__title' id='mainSection'>
     <h1 className='first__title'>Juan Manuel de Monasterio</h1>
     <h2 className='hero__subtitle' >Full-Stack Web Developer</h2>
     </div>

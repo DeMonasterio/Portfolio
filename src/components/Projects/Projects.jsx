@@ -27,7 +27,7 @@ function Projects() {
 
 
     const [actualImage, setactualImage] = useState(physics)
-    const [actualCaption, setactualCaption] = useState("")
+    const [actualCaption, setactualCaption] = useState("Introduccion a la física")
     const handleLeft = () => {
         actualImage === physics ? setactualImage(encrip) :
             actualImage === encrip ? setactualImage(ecom) :
@@ -50,7 +50,7 @@ function Projects() {
 
     return (
         <>
-            <div className="projects__color">
+            <div className="projects__color" id="projectsSection" >
                 <div className="projects__section" >
                     <h2 className="projects__title" >Proyectos</h2>
                     <span className="projects__label"></span>
@@ -88,10 +88,10 @@ function Projects() {
                         </div>
                         <div className="hermano">
                             <img className="projects--images" src={actualImage} alt="" />
-                        </div>
                             <div className="seemorebtn">
                                 <button className="btn--sm">See more</button>
                             </div>
+                        </div>
                     </div>
 
                     <div className="project--slider" >

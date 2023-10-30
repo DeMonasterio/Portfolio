@@ -8,28 +8,30 @@ function Contact() {
     return (
         <>
             <div className="contact__color">
-                
-                <div className="contact__container">
-                        <ul className="contact--list">
-                            <li className="list--contact">  Sobre mí</li>
-                            <li className="list--contact">  Habilidades</li>
-                            <li className="list--contact">   Proyectos</li>
-                            <li className="list--contact">   Descargar CV</li>
-                        </ul>
+
+                <div className="contact__container" id="contactSection" >
+                    <ul className="contact--list">
+                        <li className="list--contact"><a href="#aboutMeSection">Sobre mí</a></li>
+                        <li className="list--contact">  Habilidades</li>
+                        <li className="list--contact"><a href="#projectsSection">Proyectos</a></li>
+                        <li className="list--contact">Descargar CV</li>
+                    </ul>
+
+
                         <div className="images--container">
-                <a className="anchorcontact" href="">
-                    <img className="icon" src={mailIcon} alt="" />
-                </a>
-                <a  className="anchorcontact"  href="">
-                    <img className="icon" src={githubIcon} alt="" />
-                </a>
-                <a className="anchorcontact"  href="">
-                    <img className="icon" src={linkedinIcon} alt="" />
-                </a>
+                            <a className="anchorcontact" href="">
+                                <img className="icon" src={mailIcon} alt="" />
+                            </a>
+                            <a className="anchorcontact" href="">
+                                <img className="icon" src={githubIcon} alt="" />
+                            </a>
+                            <a className="anchorcontact" href="">
+                                <img className="icon" src={linkedinIcon} alt="" />
+                            </a>
                         </div>
                 </div>
             </div>
-        </> 
+        </>
     )
 }
 
