@@ -11,9 +11,9 @@ function Contact() {
 
                 <div className="contact__container" id="contactSection" >
                     <ul className="contact--list">
-                        <li className="list--contact"><a href="#aboutMeSection">Sobre mí</a></li>
+                    <a href="#aboutMeSection"><li className="list--contact">Sobre mí</li></a>
                         <li className="list--contact">  Habilidades</li>
-                        <li className="list--contact"><a href="#projectsSection">Proyectos</a></li>
+                        <a href="#projectsSection"><li className="list--contact">Proyectos</li></a>
                         <li className="list--contact">Descargar CV</li>
                     </ul>
 
@@ -22,7 +22,7 @@ function Contact() {
                             <a className="anchorcontact" href="">
                                 <img className="icon" src={mailIcon} alt="" />
                             </a>
-                            <a className="anchorcontact" href="">
+                            <a className="anchorcontact" href="https://github.com/DeMonasterio?tab=repositories">
                                 <img className="icon" src={githubIcon} alt="" />
                             </a>
                             <a className="anchorcontact" href="">

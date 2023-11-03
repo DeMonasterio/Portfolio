@@ -9,8 +9,8 @@ import "./Aboutme.css";
 function Aboutme() {
   return (
     <>
-      <div className="aboutme__color" id="aboutMeSection" >
-        <h2 className="aboutme__title" >Sobre mí</h2>
+      <div className="aboutme__color"  >
+        <h2 className="aboutme__title" id="aboutMeSection" >Sobre mí</h2>
         <span className="aboutme__label"></span>
       </div>
 

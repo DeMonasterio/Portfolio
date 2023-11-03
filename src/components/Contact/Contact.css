@@ -4,6 +4,10 @@
     src: url(./../../assets/fonts/Upheaval.ttf) format("woff2");
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
 .contact__color{
     
@@ -41,6 +45,7 @@
 
 .list--contact:hover {
     color: white;
+    transform: scale(1.1);
     transition: .3s;
 }
 
@@ -65,7 +70,6 @@
     transform: scale(1.1);
     transition: .3s;
 }
-
 
 
 
