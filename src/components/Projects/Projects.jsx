@@ -24,10 +24,11 @@ function Projects() {
     // const handleSliderRight = (e) => {
     //     setCount(count + 1)
     // }
-
-
     const [actualImage, setactualImage] = useState(physics)
     const [actualCaption, setactualCaption] = useState("Introduccion a la física")
+    const [projectLink, setprojectLink] = useState("https://demonasterio.github.io/ProyectoUTN")
+
+
     const handleLeft = () => {
         actualImage === physics ? setactualImage(encrip) :
             actualImage === encrip ? setactualImage(ecom) :
@@ -37,7 +38,12 @@ function Projects() {
             actualImage === encrip ? setactualCaption("E-Commerce") :
                 actualImage === ecom ? setactualCaption("Introduccion a la física") : setactualCaption("Error 404")
 
+        actualImage === physics ? setprojectLink("https://demonasterio.github.io/Encriptador") :
+            actualImage === encrip ? setprojectLink("https://ecommerceuwu.netlify.app") :
+                actualImage === ecom ? setprojectLink("https://demonasterio.github.io/ProyectoUTN") : setactualCaption("Error 404")
+
     }
+    
     const handleRight = () => {
         actualImage === physics ? setactualImage(ecom) :
             actualImage === ecom ? setactualImage(encrip) :
@@ -46,7 +52,14 @@ function Projects() {
         actualImage === physics ? setactualCaption("E-Commerce") :
             actualImage === encrip ? setactualCaption("Introduccion a la física") :
                 actualImage === ecom ? setactualCaption("Encriptador de texto") : setactualCaption("Error 404")
-    }
+    
+        
+        actualImage === physics ?  setprojectLink("https://ecommerceuwu.netlify.app"):
+            actualImage === encrip ?setprojectLink( "https://demonasterio.github.io/ProyectoUTN"):
+                actualImage === ecom ? setprojectLink("https://demonasterio.github.io/Encriptador") : setactualCaption("Error 404")
+    
+    
+            }
 
     return (
         <>
@@ -88,9 +101,9 @@ function Projects() {
                         </div>
                         <div className="hermano">
                             <img className="projects--images" src={actualImage} alt="" />
-                            <div className="seemorebtn">
+                            <a target="_blank"  href={projectLink}><div className="seemorebtn">
                                 <button className="btn--sm">See more</button>
-                            </div>
+                            </div></a>
                         </div>
                     </div>
 

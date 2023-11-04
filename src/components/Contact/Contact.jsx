@@ -19,14 +19,14 @@ function Contact() {
 
 
                         <div className="images--container">
-                            <a className="anchorcontact" href="">
-                                <img className="icon" src={mailIcon} alt="" />
+                            <a className="anchorcontact" target="_blank" href="mailto:juanmanueldemonasterio@gmail.com">
+                                <img className="icon" src={mailIcon} alt="Mail icon" />
                             </a>
-                            <a className="anchorcontact" href="https://github.com/DeMonasterio?tab=repositories">
-                                <img className="icon" src={githubIcon} alt="" />
+                            <a className="anchorcontact" target="_blank" href="https://github.com/DeMonasterio">
+                                <img className="icon" src={githubIcon} alt="Github Icon" />
                             </a>
-                            <a className="anchorcontact" href="">
-                                <img className="icon" src={linkedinIcon} alt="" />
+                            <a className="anchorcontact" href="https://www.linkedin.com/in/demonasterio/" target="_blank"  >
+                                <img className="icon" src={linkedinIcon} alt="Linkedin icon" />
                             </a>
                         </div>
                 </div>

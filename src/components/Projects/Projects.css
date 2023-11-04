@@ -47,7 +47,14 @@
   min-width: 10%;
   max-width: 45%;
   padding: 0 0.5em;
+  display: flex;
+  justify-content: start
 }
+.project--slider:nth-child(1){
+  display: flex;
+  justify-content: end;
+}
+
 
 .container--project {
   display: flex;
@@ -117,7 +124,6 @@
   width: 100%;
 }
 .arrow--left {
-  align-self: flex-start;
   transform: rotate(-135deg);
 }
 .arrow--right {
@@ -151,6 +157,7 @@
     animation: forwards getUpPC 1s;
   }
 }
+
 
 @keyframes getUp {
   0% {

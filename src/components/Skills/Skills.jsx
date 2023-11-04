@@ -12,15 +12,20 @@ import SkillsCard from "./SkillsCard.jsx"
 
 export default function Skills() {
 
-    const skillSet = ["React", "JavaScript", "SQL", "Express", "Java" ,  "CSS", "HTML"];
+  const skillSet = ["React", "JavaScript", "SQL", "Express", "Java", "CSS", "HTML"];
 
-    return(
-        <div className="skills__container">
+  return (
+    // <div className="skills__container">
+    <>
+      <div className="projects__section" >
         <h2 className="skills__title">Skills</h2>
-        <div className="skillset" >
-            {skillSet.map((skill) => (<SkillsCard skill={skill} />))}
-        </div>
-        </div>
-    )
-    
+        <span className="projects__label"></span>
+      </div>
+      <div className="skillset" >
+        {skillSet.map((skill) => (<SkillsCard skill={skill} />))}
+      </div>
+    </>
+    // </div>
+  )
+
 }
