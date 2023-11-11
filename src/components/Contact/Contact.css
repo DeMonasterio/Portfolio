@@ -11,7 +11,7 @@ a{
 
 .contact__color{
     
- background-color: rgb(53, 248, 111);
+    background-color: #379355;
 }
 
 
@@ -45,8 +45,8 @@ a{
 
 .list--contact:hover {
     color: white;
-    transform: scale(1.1);
-    transition: .3s;
+    /* transform: scale(1.1); */
+    transition: .5s;
 }
 
 .images--container{
@@ -96,8 +96,7 @@ a{
 
 
 
-
-/* @media (min-width: 900px) {
+@media (min-width: 900px) {
    .contact__container{
        flex-direction: row;
        padding: 2em;
@@ -116,6 +115,6 @@ a{
        gap: 2em;
    }   
     a{
-        width: 15%;
+        /* width: 15%; */
     }
-} */
+}

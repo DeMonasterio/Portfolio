@@ -13,7 +13,7 @@
 
 .aboutme__title {
   font-family: minecrafttitle;
-  font-size: clamp(1em, 8vw, 6em);
+  font-size: clamp(1em, 8vw, 4.5em);
   letter-spacing: 4px;
   min-width: fit-content;
 }
@@ -34,7 +34,6 @@
   padding: .5em 0;
   gap: 3px;
   display: flex;
-  height: fit-content;
 }
 
 .aboutme__imagediv{
@@ -56,7 +55,7 @@
 .aboutme__image--me {
   width: 40%;
   border: 3px solid lightgreen;
-  border-radius: 35px;
+  /* border-radius: 35px; */
   background-image: url(../../assets/abtmeimg/junglebg.webp);
   background-position: 55%;
   background-size: cover;
@@ -64,14 +63,16 @@
 
 
 .image--2{
-display: none;
+  display: none;
 }
 
 
 .aboutme__para {
   color: white;
   /* background-color: rebeccapurple; */
-  font-size: clamp(1em, 5vw, 1.5em);
+  font-size: clamp(1em, 5vw, 1.2em);
+  letter-spacing: 1px;
+  
 }
 
 .startline{
@@ -131,8 +132,12 @@ display: none;
     padding: 2em 3em;
   }
   .aboutme__image--me {
-    width: 23%;
+    width: 25%;
   }
+  .aboutme__para{
+    padding-right: 2em;
+  }
+
   .startline{
     display: flex;
   }

@@ -33,7 +33,7 @@ function App() {
               <img className='icons-img' src={lnkIn} alt="" />
             </a>
 
-            <a className='icons' href="">
+            <a className='icons' href="https://github.com/DeMonasterio">
               <img className='icons-img' src={gith} alt="" />
             </a>
           </div>

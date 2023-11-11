@@ -14,7 +14,18 @@
 
   .skills__title{
     font-family: minecrafttitle;
-    font-size: clamp(1em, 8vw, 6em);
+    font-size: clamp(1em, 8vw, 4.5em);
     color: rgb(53, 248, 111);
     letter-spacing: 2px;
+}
+
+.skillset{
+  padding:0  3em;
+  display: flex;
+  gap: 2em;
+}
+
+.skillcard{
+  padding:1em 1em;
+  background-color: rebeccapurple;
 }
