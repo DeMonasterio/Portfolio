@@ -2,7 +2,7 @@ import "./Contact.css"
 import mailIcon from "./../../assets/Icons/mailIcon.png"
 import githubIcon from "./../../assets/Icons/github.png"
 import linkedinIcon from "./../../assets/Icons/linkedin.png"
-import cert from "../../assets/background/certificate.png"
+import Curriculum from "../../assets/cv/deMonasterioCv.pdf"
 
 function Contact() {
     return (
@@ -12,9 +12,9 @@ function Contact() {
                 <div className="contact__container" id="contactSection" >
                     <ul className="contact--list">
                     <a href="#aboutMeSection"><li className="list--contact">Sobre mí</li></a>
-                        <li className="list--contact">  Habilidades</li>
+                     <a href="#skillSection"><li className="list--contact">Habilidades</li></a>
                         <a href="#projectsSection"><li className="list--contact">Proyectos</li></a>
-                        <li className="list--contact">Descargar CV</li>
+                        <a download="" href={Curriculum}><li className="list--contact">Descargar CV</li></a>
                     </ul>
 
 

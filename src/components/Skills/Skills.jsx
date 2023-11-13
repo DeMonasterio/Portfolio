@@ -18,7 +18,7 @@ export default function Skills() {
     // <div className="skills__container">
     <>
       <div className="projects__section" >
-        <h2 className="skills__title">Skills</h2>
+        <h2 className="skills__title" id="skillSection" >Skills</h2>
         <span className="projects__label"></span>
       </div>
       <div className="skillset" >

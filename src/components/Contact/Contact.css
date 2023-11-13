@@ -15,12 +15,6 @@ a{
 }
 
 
-/* .contact__title{
-    font-family: minecrafttitle;
-    color: rgb(255, 255, 255);
-    padding: 2em .5em .5em;
-    font-size: clamp(1em, 8vw, 5em);
-} */
 
 .contact__container{
     font-family: minecrafttitle;
@@ -114,7 +108,4 @@ a{
        width: 50%;
        gap: 2em;
    }   
-    a{
-        /* width: 15%; */
-    }
 }
